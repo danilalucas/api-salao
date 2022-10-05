@@ -106,8 +106,16 @@ class EmployeeController extends Controller
         return response()->json(['message' => 'employee inactived'],200);
     }
 
-    public function read()
+    public function read(Request $request)
     {
+        $name = $request->query("name");
+
+        if (!empty($name)) {
+            $employee = Employee::where('name','like','%' . $name . '%')->get();
+            if (is_null($employee) || $employee->count() == 0) { return response()->json(['message' => 'employee not found'],404); }
+            return response()->json($employee,200);
+        }
+
         $employee = Employee::all();
 
         return response()->json($employee,200);
