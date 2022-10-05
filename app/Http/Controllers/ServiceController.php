@@ -100,8 +100,8 @@ class ServiceController extends Controller
         $name = $request->query("name");
 
         if (!empty($name)) {
-
             $service = Service::where('name','like','%' . $name . '%')->get();
+            if (is_null($service) || $service->count() == 0) { return response()->json(['message' => 'service not found'],404); }
             return response()->json($service,200);
         }
 
