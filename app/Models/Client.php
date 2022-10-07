@@ -21,4 +21,9 @@ class Client extends Model
         'cpf',
         'active',
     ];
+
+    public function schedules()
+    {
+        return $this->hasMany(Schedule::class);
+    }
 }

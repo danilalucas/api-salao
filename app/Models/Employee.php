@@ -39,4 +39,9 @@ class Employee extends Model
         'occupation',
         'active',
     ];
+
+    public function schedules()
+    {
+        return $this->hasMany(Schedule::class);
+    }
 }
