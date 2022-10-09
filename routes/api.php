@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ScheduleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,3 +45,11 @@ Route::put('/client/active', [ClientController::class, 'active']);
 Route::put('/client/inactive', [ClientController::class, 'inactive']);
 Route::get('/client', [ClientController::class, 'read']);
 Route::get('/client/{id}', [ClientController::class, 'readById']);
+
+Route::prefix('schedule')->group(function () {
+    Route::post('/', [ScheduleController::class, 'create']);
+    Route::patch('/{id}', [ScheduleController::class, 'update']);
+    Route::get('/', [ScheduleController::class, 'read']);
+    Route::get('/{id}', [ScheduleController::class, 'readById']);
+    Route::delete('/{id}', [ScheduleController::class, 'delete']);
+});

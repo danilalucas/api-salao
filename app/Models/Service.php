@@ -18,4 +18,9 @@ class Service extends Model
         'name',
         'active',
     ];
+
+    public function schedules()
+    {
+        return $this->hasMany(Schedule::class);
+    }
 }
