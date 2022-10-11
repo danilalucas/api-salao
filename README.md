@@ -1,5 +1,5 @@
 <h2 align="center"> 
-	Api Rest - Salão de beleza 💅🏼
+	Api Rest - Salão de beleza 💅🏻
 </h2>
 
 <p align="center">
@@ -13,7 +13,7 @@
 
 ## 💻 Sobre o projeto
 
-💉 Api salão é ideal para gerenciamento do seu salão de beleza contemplando agendamentos, cadastros de clientes e colaboradores.
+Api salão é ideal para gerenciamento do seu salão de beleza contemplando agendamentos, cadastros de clientes e colaboradores.
 
 ---
 
