@@ -22,7 +22,7 @@ Api salão é ideal para gerenciamento do seu salão de beleza contemplando agen
 Clique abaixo para baixar os endpoints e importar no insomnia
 
 <a href="./insomnia.json">
-  <img alt="Made by tgmarinho" src="https://img.shields.io/badge/Baixar%20endpoints-Insomnia-%2304D361">
+  <img src="https://img.shields.io/badge/Baixar%20endpoints-Insomnia-%2304D361">
 </a>
 
 <h4 align="center"> 
@@ -80,7 +80,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 👩‍💻 Autor
 
 <a href="https://github.com/danilalucas">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/80535640?v=4" width="100px;" alt=""/>
+ <img src="https://avatars.githubusercontent.com/u/80535640?v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Daníla Lucas</b></sub></a> <a href="https://github.com/danilalucas" title="Profile"></a>
  <br />
